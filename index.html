@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Websites Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #4f46e5;
+      color: white;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      width: 95%;
+      max-width: 1200px;
+      margin-top: 2rem;
+    }
+
+    .site-card {
+      background: rgb(154, 183, 226);
+      border-radius: 12px;
+      padding: 1.2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #4f46e5;
+    }
+
+    .site-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      color: #ffffff;
+      background: #ea33b6;
+    }
+
+    @media (max-width: 500px) {
+  .button-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .site-card {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+  .site-card:active {
+  transform: scale(0.97);
+}
+
+}
+
+    
+  </style>
+</head>
+<body>
+  <header>Website Dashboard</header>
+
+  <div class="button-container">
+    <div class="site-card" onclick="window.open('https://nadnitin.github.io/field_audit/', '_blank')">Field Audit</div>
+    <div class="site-card" onclick="window.open('https://nadnitin.github.io/hpcl_part/', '_blank')">HPCL PART</div>
+    <div class="site-card" onclick="window.open('https://nadnitin3.github.io/reminder/', '_blank')">Reminder</div>
+    <div class="site-card" onclick="window.open('https://nadnitin3.github.io/SaveIMP/', '_blank')">Save IMP</div>
+    <div class="site-card" onclick="window.open('https://nadnitin.github.io/access_master/', '_blank')">Access Master</div>
+  </div>
+</body>
+</html>
